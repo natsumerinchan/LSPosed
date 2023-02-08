@@ -72,8 +72,6 @@
     <string name="android_version_unsatisfied">Android version unsatisfied</string>
     <string name="crashed">Crashed</string>
     <string name="mount_failed">Mount failed</string>
-    <string name="selinux_permissive">SELinux is permissive</string>
-    <string name="sepolicy_incorrect">SELinux policy is incorrect</string>
     <string name="update_lsposed">Update LSPosed</string>
     <string name="update_lsposed_msg">Confirm to update LSPosed? This device will reboot after update completion</string>
 

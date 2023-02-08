@@ -9,8 +9,6 @@ interface ILSPManagerService {
     const int DEX2OAT_OK = 0;
     const int DEX2OAT_CRASHED = 1;
     const int DEX2OAT_MOUNT_FAILED = 2;
-    const int DEX2OAT_SELINUX_PERMISSIVE = 3;
-    const int DEX2OAT_SEPOLICY_INCORRECT = 4;
 
     String getApi() = 1;
 

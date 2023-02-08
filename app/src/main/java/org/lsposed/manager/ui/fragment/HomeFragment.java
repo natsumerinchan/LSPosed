@@ -170,12 +170,6 @@ public class HomeFragment extends BaseFragment {
                 case ILSPManagerService.DEX2OAT_MOUNT_FAILED:
                     binding.dex2oatWrapper.setText(String.format(LocaleDelegate.getDefaultLocale(), "%s (%s)", getString(R.string.unsupported), getString(R.string.mount_failed)));
                     break;
-                case ILSPManagerService.DEX2OAT_SELINUX_PERMISSIVE:
-                    binding.dex2oatWrapper.setText(String.format(LocaleDelegate.getDefaultLocale(), "%s (%s)", getString(R.string.unsupported), getString(R.string.selinux_permissive)));
-                    break;
-                case ILSPManagerService.DEX2OAT_SEPOLICY_INCORRECT:
-                    binding.dex2oatWrapper.setText(String.format(LocaleDelegate.getDefaultLocale(), "%s (%s)", getString(R.string.unsupported), getString(R.string.sepolicy_incorrect)));
-                    break;
             }
         } else {
             binding.apiVersion.setText(R.string.not_installed);
