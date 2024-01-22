@@ -13,7 +13,9 @@ RIRU_MODULE_MIN_API_VERSION=@RIRU_MODULE_MIN_API_VERSION@
 RIRU_MODULE_MIN_RIRU_VERSION_NAME="@RIRU_MODULE_MIN_RIRU_VERSION_NAME@"
 RIRU_MODULE_DEBUG=@RIRU_MODULE_DEBUG@
 
-if [ "$MAGISK_VER_CODE" -ge 21000 ]; then
+if [ "$KSU" == "true" ]; then
+  MAGISK_CURRENT_RIRU_MODULE_PATH=/data/adb/modules/riru-core
+elif [ "$MAGISK_VER_CODE" -ge 21000 ]; then
   MAGISK_CURRENT_RIRU_MODULE_PATH=$(magisk --path)/.magisk/modules/riru-core
 else
   MAGISK_CURRENT_RIRU_MODULE_PATH=/sbin/.magisk/modules/riru-core
